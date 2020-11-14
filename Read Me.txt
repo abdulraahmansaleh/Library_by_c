@@ -1,0 +1,13 @@
+University Library System
+made by Yahia & Abdulrahman Saleh         
+Functionalities:
+Firstly Running The application you'll be greeted by a menu with many options:
+First option is to register a student which requires the students name, id, email and password which gets saved into an array.
+Second option is to see how many students registered and see all of their names and ids.
+Third option is to register a book and it requires it's name and id and gets the data saved ito an array.
+The Fourth option is to view all books registered and their ids
+The fifth option is to search for a book by it's name
+The sixth and final option is to exit the application
+How we Did it:
+To make the student's registration form we made a form as a structure that saves the data in an array, and the same was did to the books registration part. the view students and the view books elements were made by printing out the array. Seaeching for a book was the hardest part. we made it by comparing the entered name per entry from thye array and then checking each letter if they match then it returns the book as found. and the menu isa a loop that only exits when 6 is entered
+
