@@ -1,12 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define ANSI_COLOR_RED     "\x1b[31m"
-#define ANSI_COLOR_GREEN   "\x1b[32m"
-#define ANSI_COLOR_YELLOW  "\x1b[33m"
-#define ANSI_COLOR_BLUE    "\x1b[34m"
-#define ANSI_COLOR_MAGENTA "\x1b[35m"
-#define ANSI_COLOR_CYAN    "\x1b[36m"
-#define ANSI_COLOR_RESET   "\x1b[0m"
+
 int menu();
 struct student
 {
@@ -25,10 +19,9 @@ void show_data(struct student arr[],int place);
 void get_books(struct book arr[],int place);
 int menu()
 {
-    printf("\033[22;34mHello, world!\033[0m");
-    printf("\033[22;34m Enter your choice\033[0m\n" );
+    printf("Enter your choice \n" );
     printf("[1]register\n");
-    printf("[2] number of students registered\n");
+    printf("[2]number of students registered\n");
     printf("[3]register book\n") ;
     printf("[4]view all books\n");
     printf("[5]search for a book\n");
@@ -63,7 +56,7 @@ void show_data(struct student arr[],int place)
     for(i=0; i<place; i++)
     {
 
-        printf("name :%s        id : %d          email : %s\n",arr[i].name,arr[i].id,arr[i].email);
+        printf("\tname :%s   id :%d   email :%s\n",arr[i].name,arr[i].id,arr[i].email);
 
     }
 }
@@ -74,7 +67,7 @@ void show_books(struct book arr[],int place)
     for(i=0; i<place; i++)
     {
 
-        printf("name :%s        id : %d\n",arr[i].name,arr[i].id);
+        printf("\tname:%s   id :%d\n",arr[i].name,arr[i].id);
 
     }
 }
