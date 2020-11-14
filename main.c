@@ -20,11 +20,11 @@ void get_books(struct book arr[],int place);
 int menu()
 {
     printf("Enter your choice \n" );
-    printf("[1]register\n");
-    printf("[2]number of students registered\n");
-    printf("[3]register book\n") ;
-    printf("[4]view all books\n");
-    printf("[5]search for a book\n");
+    printf("[1]Register\n");
+    printf("[2]Students registered\n");
+    printf("[3]Register book\n") ;
+    printf("[4]View all books\n");
+    printf("[5]Search for a book\n");
     printf("[6]Exit\n");
     int n;
     scanf("%d",&n);
