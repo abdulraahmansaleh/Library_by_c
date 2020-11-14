@@ -87,7 +87,6 @@ void search(struct book arr[],int place)
             {
                 break;
             }
-            printf("%c   %c\n",name[u],arr[i].name[u]);
           if(arr[i].name[u]!=name[u])
           {
               f=1;
